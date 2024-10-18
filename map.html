@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_4d8b7d0b90fe5ca88669fc685c91ea0c {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_4d8b7d0b90fe5ca88669fc685c91ea0c" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_4d8b7d0b90fe5ca88669fc685c91ea0c = L.map(
+                "map_4d8b7d0b90fe5ca88669fc685c91ea0c",
+                {
+                    center: [54.32886635604584, -2.745196185690222],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+            L.control.scale().addTo(map_4d8b7d0b90fe5ca88669fc685c91ea0c);
+
+            
+
+        
+    
+            var tile_layer_b423107c2c9b127170ed8fdf030f7a11 = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 20, "maxZoom": 20, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abcd", "tms": false}
+            );
+        
+    
+            tile_layer_b423107c2c9b127170ed8fdf030f7a11.addTo(map_4d8b7d0b90fe5ca88669fc685c91ea0c);
+        
+    
+            var marker_0164140157d29f8e369cd43cb2060362 = L.marker(
+                [54.3280116469909, -2.7471710788152794],
+                {}
+            ).addTo(map_4d8b7d0b90fe5ca88669fc685c91ea0c);
+        
+    
+            var icon_df90eab393903fb9c639427944343591 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "leaf", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_0164140157d29f8e369cd43cb2060362.setIcon(icon_df90eab393903fb9c639427944343591);
+        
+    
+        var popup_cc3d746cc4c1e2da31bda2f7e9bbdfd8 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_deaa1248c14e09ecbe5d713c5fee74f0 = $(`<div id="html_deaa1248c14e09ecbe5d713c5fee74f0" style="width: 100.0%; height: 100.0%;">     <h4>Farrers Tea & Coffee House</h4>     <p>Address: 13 Stricklandgate, Kendal LA9 4LY</p>     <img src="https://raw.githubusercontent.com/ClemVilla/Matcha-Mountain/refs/heads/main/farrers_shop.jpg" alt="Farrer's" width="300px" height="Auto"> </div>`)[0];
+                popup_cc3d746cc4c1e2da31bda2f7e9bbdfd8.setContent(html_deaa1248c14e09ecbe5d713c5fee74f0);
+            
+        
+
+        marker_0164140157d29f8e369cd43cb2060362.bindPopup(popup_cc3d746cc4c1e2da31bda2f7e9bbdfd8)
+        ;
+
+        
+    
+    
+            marker_0164140157d29f8e369cd43cb2060362.bindTooltip(
+                `<div>
+                     Farrer's
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7668d3f30e666c1db4b846bdc36a64c7 = L.marker(
+                [54.37849734824007, -2.9066178754330987],
+                {}
+            ).addTo(map_4d8b7d0b90fe5ca88669fc685c91ea0c);
+        
+    
+            var icon_14f6890b2a9811f582e07f0e078f07e0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "leaf", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_7668d3f30e666c1db4b846bdc36a64c7.setIcon(icon_14f6890b2a9811f582e07f0e078f07e0);
+        
+    
+        var popup_e6bf1a8735229f199e651db60409c51c = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_0d1f00cdafd2c5b1b4aadb58d07f2f07 = $(`<div id="html_0d1f00cdafd2c5b1b4aadb58d07f2f07" style="width: 100.0%; height: 100.0%;">     <h4>Manuka Health Store</h4>     <p>Address: 44 Main Rd, Windermere LA23 1DX</p>     <img src="https://raw.githubusercontent.com/ClemVilla/Matcha-Mountain/refs/heads/main/manuka_shop.jpg" alt="Manuka" width="300px" height="Auto"> </div>`)[0];
+                popup_e6bf1a8735229f199e651db60409c51c.setContent(html_0d1f00cdafd2c5b1b4aadb58d07f2f07);
+            
+        
+
+        marker_7668d3f30e666c1db4b846bdc36a64c7.bindPopup(popup_e6bf1a8735229f199e651db60409c51c)
+        ;
+
+        
+    
+    
+            marker_7668d3f30e666c1db4b846bdc36a64c7.bindTooltip(
+                `<div>
+                     Manuka
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_85f42ce1b492ccfdc23e536905c0a3bd = L.marker(
+                [54.376836829822246, -2.8160613289209704],
+                {}
+            ).addTo(map_4d8b7d0b90fe5ca88669fc685c91ea0c);
+        
+    
+            var icon_682dedb494c793492911fabd84d0cb6e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "leaf", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_85f42ce1b492ccfdc23e536905c0a3bd.setIcon(icon_682dedb494c793492911fabd84d0cb6e);
+        
+    
+        var popup_3de0d56658d433e265bd77358e2a3b70 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_09df2964f6d9ae838352cc1d3cc7289e = $(`<div id="html_09df2964f6d9ae838352cc1d3cc7289e" style="width: 100.0%; height: 100.0%;">     <h4>Duffins</h4>     <p>Address: 49 Main St, Staveley, Kendal LA8 9LN</p>     <img src="https://raw.githubusercontent.com/ClemVilla/Matcha-Mountain/refs/heads/main/duffin's.jpg" alt="Duffins" width="300px" height="Auto"> </div>`)[0];
+                popup_3de0d56658d433e265bd77358e2a3b70.setContent(html_09df2964f6d9ae838352cc1d3cc7289e);
+            
+        
+
+        marker_85f42ce1b492ccfdc23e536905c0a3bd.bindPopup(popup_3de0d56658d433e265bd77358e2a3b70)
+        ;
+
+        
+    
+    
+            marker_85f42ce1b492ccfdc23e536905c0a3bd.bindTooltip(
+                `<div>
+                     Duffins
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
+</html>
